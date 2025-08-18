@@ -10,7 +10,7 @@ export function TeachersSection() {
       education: "PhD in Islamic Theology, Al-Azhar University",
       experience: "25 years",
       specialties: ["Quran & Hadith", "Islamic Jurisprudence", "Leadership"],
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+      image: ""
     },
     {
       name: "Ustazah Fatimah Omar",
@@ -18,7 +18,7 @@ export function TeachersSection() {
       education: "MA in Arabic Literature, University of Damascus",
       experience: "18 years",
       specialties: ["Classical Arabic", "Poetry", "Rhetoric"],
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=300&h=300&fit=crop&crop=face"
+      image: ""
     },
     {
       name: "Prof. Ibrahim Malik",
@@ -26,7 +26,7 @@ export function TeachersSection() {
       education: "PhD in Physics, University of Cambridge",
       experience: "20 years",
       specialties: ["Physics", "Mathematics", "Research Methods"],
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
+      image: ""
     },
     {
       name: "Dr. Aisha Rahman",
@@ -42,7 +42,7 @@ export function TeachersSection() {
       education: "Ijazah in Quran Recitation, Madinah University",
       experience: "22 years",
       specialties: ["Quran Memorization", "Tajweed", "Spiritual Guidance"],
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face"
+      image: ""
     },
     {
       name: "Ms. Sarah Ahmed",
@@ -50,7 +50,7 @@ export function TeachersSection() {
       education: "MA in English Literature, Harvard University",
       experience: "12 years",
       specialties: ["Modern Literature", "Creative Writing", "Language Skills"],
-      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=300&fit=crop&crop=face"
+      image: ""
     }
   ];
 

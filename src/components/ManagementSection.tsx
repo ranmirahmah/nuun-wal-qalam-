@@ -10,7 +10,7 @@ export function ManagementSection() {
       background: "Former Education Minister with 30+ years in educational leadership",
       email: "chairman@nuunwalqalam.edu",
       phone: "+60-12-345-6789",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face"
+      image: ""
     },
     {
       name: "Dr. Ahmad Hassan",
@@ -18,7 +18,7 @@ export function ManagementSection() {
       background: "Leading educator with expertise in Islamic Studies and modern pedagogy",
       email: "principal@nuunwalqalam.edu",
       phone: "+60-12-345-6790",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+      image: ""
     },
     {
       name: "Hajjah Khadijah Ibrahim",
@@ -26,7 +26,7 @@ export function ManagementSection() {
       background: "Curriculum specialist with 20 years in Islamic education development",
       email: "vpacademic@nuunwalqalam.edu",
       phone: "+60-12-345-6791",
-      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=300&h=300&fit=crop&crop=face"
+      image: ""
     },
     {
       name: "Ustaz Rahman Abdullah",
@@ -34,7 +34,7 @@ export function ManagementSection() {
       background: "Student development expert focusing on character building and welfare",
       email: "vpstudent@nuunwalqalam.edu",
       phone: "+60-12-345-6792",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
+      image: ""
     },
     {
       name: "Ms. Siti Nurhaliza",
@@ -42,7 +42,7 @@ export function ManagementSection() {
       background: "Administrative professional with expertise in student records and admissions",
       email: "registrar@nuunwalqalam.edu",
       phone: "+60-12-345-6793",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=300&h=300&fit=crop&crop=face"
+      image: ""
     },
     {
       name: "En. Zakaria Hassan",
@@ -50,7 +50,7 @@ export function ManagementSection() {
       background: "Financial management specialist ensuring sustainable operations",
       email: "finance@nuunwalqalam.edu",
       phone: "+60-12-345-6794",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face"
+      image: ""
     }
   ];
 
