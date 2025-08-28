@@ -3,35 +3,35 @@ import { Card, CardContent } from "./ui/card";
 export function HistorySection() {
   const milestones = [
     {
-      year: "1985",
+      year: "1993",
       title: "Foundation",
-      description: "Nuun Wal Qalam Islamic Boarding School was established with 50 students and 5 teachers."
+      description: "Nuun Wal Qalam was established with 50 students and 5 teachers."
     },
     {
-      year: "1990",
+      year: "1996",
       title: "First Graduation",
       description: "Our first batch of 25 students graduated with excellent academic and Islamic credentials."
     },
-    {
-      year: "1995",
-      title: "Campus Expansion",
-      description: "New dormitories and classrooms were built to accommodate 200 students."
-    },
-    {
-      year: "2000",
-      title: "Accreditation",
-      description: "Received full accreditation from the Ministry of Education and Islamic Affairs."
-    },
-    {
-      year: "2005",
-      title: "International Program",
-      description: "Launched international student exchange programs with schools in Malaysia and Egypt."
-    },
-    {
-      year: "2010",
-      title: "Technology Integration",
-      description: "Introduced modern technology and digital learning platforms across all departments."
-    },
+    // {
+    //   year: "1995",
+    //   title: "Campus Expansion",
+    //   description: "New dormitories and classrooms were built to accommodate 200 students."
+    // },
+    // {
+    //   year: "2000",
+    //   title: "Accreditation",
+    //   description: "Received full accreditation from the Ministry of Education and Islamic Affairs."
+    // },
+    // {
+    //   year: "2005",
+    //   title: "International Program",
+    //   description: "Launched international student exchange programs with schools in Malaysia and Egypt."
+    // },
+    // {
+    //   year: "2010",
+    //   title: "Technology Integration",
+    //   description: "Introduced modern technology and digital learning platforms across all departments."
+    // },
     {
       year: "2015",
       title: "Research Center",
