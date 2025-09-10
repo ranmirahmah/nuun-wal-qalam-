@@ -7,50 +7,50 @@ export function TeachersSection() {
     {
       name: "Dr. Ahmad Hassan",
       position: "Principal & Islamic Studies",
-      education: "PhD in Islamic Theology, Al-Azhar University",
-      experience: "25 years",
-      specialties: ["Quran & Hadith", "Islamic Jurisprudence", "Leadership"],
-      image: ""
+      // education: "PhD in Islamic Theology, Al-Azhar University",
+      // experience: "25 years",
+      // specialties: ["Quran & Hadith", "Islamic Jurisprudence", "Leadership"],
+      // image: ""
     },
     {
       name: "Ustazah Fatimah Omar",
       position: "Arabic Language Department Head",
-      education: "MA in Arabic Literature, University of Damascus",
-      experience: "18 years",
-      specialties: ["Classical Arabic", "Poetry", "Rhetoric"],
-      image: ""
+      // education: "MA in Arabic Literature, University of Damascus",
+      // experience: "18 years",
+      // specialties: ["Classical Arabic", "Poetry", "Rhetoric"],
+      // image: ""
     },
     {
       name: "Prof. Ibrahim Malik",
       position: "Science Department Head",
-      education: "PhD in Physics, University of Cambridge",
-      experience: "20 years",
-      specialties: ["Physics", "Mathematics", "Research Methods"],
-      image: ""
+      // education: "PhD in Physics, University of Cambridge",
+      // experience: "20 years",
+      // specialties: ["Physics", "Mathematics", "Research Methods"],
+      // image: ""
     },
     {
       name: "Dr. Aisha Rahman",
       position: "Islamic History Teacher",
-      education: "PhD in Islamic History, Oxford University",
-      experience: "15 years",
-      specialties: ["Early Islamic History", "Civilization Studies", "Research"],
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face"
+      // education: "PhD in Islamic History, Oxford University",
+      // experience: "15 years",
+      // specialties: ["Early Islamic History", "Civilization Studies", "Research"],
+      // image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face"
     },
     {
       name: "Ustaz Abdullah Yusuf",
       position: "Quran & Tajweed Instructor",
-      education: "Ijazah in Quran Recitation, Madinah University",
-      experience: "22 years",
-      specialties: ["Quran Memorization", "Tajweed", "Spiritual Guidance"],
-      image: ""
+      // education: "Ijazah in Quran Recitation, Madinah University",
+      // experience: "22 years",
+      // specialties: ["Quran Memorization", "Tajweed", "Spiritual Guidance"],
+      // image: ""
     },
     {
       name: "Ms. Sarah Ahmed",
       position: "English Literature Teacher",
-      education: "MA in English Literature, Harvard University",
-      experience: "12 years",
-      specialties: ["Modern Literature", "Creative Writing", "Language Skills"],
-      image: ""
+      // education: "MA in English Literature, Harvard University",
+      // experience: "12 years",
+      // specialties: ["Modern Literature", "Creative Writing", "Language Skills"],
+      // image: ""
     }
   ];
 

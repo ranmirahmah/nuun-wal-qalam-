@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Youtube } from "luci
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-primary text-background py-16">
+    <footer id="contact" className=" bg-primary text-background py-16 bg-gradient-to-r from-amber-950 to-amber-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
@@ -34,15 +34,15 @@ export function Footer() {
                 <MapPin className="h-5 w-5 text-amber-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-background/80">
-                    Jalan Pendidikan Islamiah 123,<br />
-                    Bandar Ilmu, 50450<br />
-                    Kuala Lumpur, Malaysia
+                    1, Nuun Avenue, Gbarada,<br />
+                    Ibeju Lekki Lagos.<br />
+                    Nigeria.
                   </p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-amber-400" />
-                <span className="text-background/80">+60-3-2234-5678</span>
+                <span className="text-background/80">08023307828</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-amber-400" />
@@ -67,7 +67,7 @@ export function Footer() {
         <div className="border-t border-background/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-background/80 text-sm">
-              © 2024 Nuun Wal Qalam Islamic Boarding School. All rights reserved.
+              © 2025 Nuun Wal Qalam Islamic Boarding School. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-background/80 hover:text-background text-sm transition-colors">Privacy Policy</a>

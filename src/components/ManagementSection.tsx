@@ -1,5 +1,7 @@
 import { Card, CardContent } from "./ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Avatar, AvatarFallback 
+  // AvatarImage 
+} from "./ui/avatar";
 import { Mail, Phone } from "lucide-react";
 
 export function ManagementSection() {
@@ -7,50 +9,50 @@ export function ManagementSection() {
     {
       name: "Datuk Haji Mohammad Ali",
       position: "Chairman of Board of Directors",
-      background: "Former Education Minister with 30+ years in educational leadership",
-      email: "chairman@nuunwalqalam.edu",
-      phone: "+60-12-345-6789",
-      image: ""
+      // background: "Former Education Minister with 30+ years in educational leadership",
+       email: "chairman@nuunwalqalam.edu",
+       phone: "+60-12-345-6789",
+      // image: ""
     },
     {
       name: "Dr. Ahmad Hassan",
       position: "Principal",
-      background: "Leading educator with expertise in Islamic Studies and modern pedagogy",
-      email: "principal@nuunwalqalam.edu",
-      phone: "+60-12-345-6790",
-      image: ""
+      // background: "Leading educator with expertise in Islamic Studies and modern pedagogy",
+       email: "principal@nuunwalqalam.edu",
+       phone: "+60-12-345-6790",
+      // image: ""
     },
     {
       name: "Hajjah Khadijah Ibrahim",
       position: "Vice Principal (Academic Affairs)",
-      background: "Curriculum specialist with 20 years in Islamic education development",
-      email: "vpacademic@nuunwalqalam.edu",
-      phone: "+60-12-345-6791",
-      image: ""
+      // background: "Curriculum specialist with 20 years in Islamic education development",
+       email: "vpacademic@nuunwalqalam.edu",
+       phone: "+60-12-345-6791",
+      // image: ""
     },
     {
       name: "Ustaz Rahman Abdullah",
       position: "Vice Principal (Student Affairs)",
-      background: "Student development expert focusing on character building and welfare",
-      email: "vpstudent@nuunwalqalam.edu",
-      phone: "+60-12-345-6792",
-      image: ""
+      // background: "Student development expert focusing on character building and welfare",
+       email: "vpstudent@nuunwalqalam.edu",
+       phone: "+60-12-345-6792",
+      // image: ""
     },
     {
       name: "Ms. Siti Nurhaliza",
       position: "Registrar",
-      background: "Administrative professional with expertise in student records and admissions",
+      // background: "Administrative professional with expertise in student records and admissions",
       email: "registrar@nuunwalqalam.edu",
       phone: "+60-12-345-6793",
-      image: ""
+      // image: ""
     },
     {
       name: "En. Zakaria Hassan",
       position: "Finance Director",
-      background: "Financial management specialist ensuring sustainable operations",
+      // background: "Financial management specialist ensuring sustainable operations",
       email: "finance@nuunwalqalam.edu",
-      phone: "+60-12-345-6794",
-      image: ""
+     phone: "+60-12-345-6794",
+      // image: ""
     }
   ];
 
@@ -71,7 +73,7 @@ export function ManagementSection() {
               <CardContent className="p-6">
                 <div className="text-center mb-6">
                   <Avatar className="w-24 h-24 mx-auto mb-4">
-                    <AvatarImage src={member.image} alt={member.name} />
+                    {/* <AvatarImage src={member.image} alt={member.name} /> */}
                     <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                   </Avatar>
                   <h3 className="text-xl mb-2 text-primary">{member.name}</h3>
@@ -79,16 +81,16 @@ export function ManagementSection() {
                 </div>
                 
                 <div className="space-y-4">
-                  <p className="text-foreground text-sm leading-relaxed">{member.background}</p>
+                  {/* <p className="text-foreground text-sm leading-relaxed">{member.background}</p> */}
                   
                   <div className="space-y-2 text-sm">
                     <div className="flex items-center gap-2 text-muted-foreground">
                       <Mail className="h-4 w-4" />
-                      <span>{member.email}</span>
+                      { <span>{member.email}</span> }
                     </div>
                     <div className="flex items-center gap-2 text-muted-foreground">
                       <Phone className="h-4 w-4" />
-                      <span>{member.phone}</span>
+                      { <span>{member.phone}</span> }
                     </div>
                   </div>
                 </div>

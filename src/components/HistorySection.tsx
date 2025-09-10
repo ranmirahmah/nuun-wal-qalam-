@@ -10,13 +10,13 @@ export function HistorySection() {
     {
       year: "1996",
       title: "First Graduation",
-      description: "Our first batch of 25 students graduated with excellent academic and Islamic credentials."
+      description: "Our first batch of students graduated with excellent arabic and Islamic credentials."
     },
-    // {
-    //   year: "1995",
-    //   title: "Campus Expansion",
-    //   description: "New dormitories and classrooms were built to accommodate 200 students."
-    // },
+     {
+      year: "2010",
+      title: "Madrasah Relocation",
+      description: "The Madrasah relocated to its permanent site."
+    },
     // {
     //   year: "2000",
     //   title: "Accreditation",
@@ -32,16 +32,16 @@ export function HistorySection() {
     //   title: "Technology Integration",
     //   description: "Introduced modern technology and digital learning platforms across all departments."
     // },
-    {
-      year: "2015",
-      title: "Research Center",
-      description: "Established the Islamic Studies Research Center for advanced scholarship."
-    },
-    {
-      year: "2020",
-      title: "Online Learning",
-      description: "Successfully transitioned to hybrid learning model during global challenges."
-    }
+    // {
+    //   year: "2015",
+    //   title: "Research Center",
+    //   description: "Established the Islamic Studies Research Center for advanced scholarship."
+    // },
+    // {
+    //   year: "2020",
+    //   title: "Online Learning",
+    //   description: "Successfully transitioned to hybrid learning model during global challenges."
+    // }
   ];
 
   return (
