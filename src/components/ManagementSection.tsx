@@ -7,51 +7,51 @@ import { Mail, Phone } from "lucide-react";
 export function ManagementSection() {
   const management = [
     {
-      name: "Datuk Haji Mohammad Ali",
-      position: "Chairman of Board of Directors",
+      name: "Ustaz Shakirullah Ajishafe",
+      position: "Teacher",
       // background: "Former Education Minister with 30+ years in educational leadership",
        email: "chairman@nuunwalqalam.edu",
-       phone: "+60-12-345-6789",
+      //  phone: "+60-12-345-6789",
       // image: ""
     },
     {
-      name: "Dr. Ahmad Hassan",
-      position: "Principal",
+      name: "Ustaz Shakirullah Ajishafe",
+      position: "Teacher",
       // background: "Leading educator with expertise in Islamic Studies and modern pedagogy",
        email: "principal@nuunwalqalam.edu",
-       phone: "+60-12-345-6790",
+      //  phone: "+60-12-345-6790",
       // image: ""
     },
     {
-      name: "Hajjah Khadijah Ibrahim",
-      position: "Vice Principal (Academic Affairs)",
+      name: "Ustaz Shakirullah Ajishafe",
+      position: "Teacher",
       // background: "Curriculum specialist with 20 years in Islamic education development",
        email: "vpacademic@nuunwalqalam.edu",
-       phone: "+60-12-345-6791",
+      //  phone: "+60-12-345-6791",
       // image: ""
     },
     {
-      name: "Ustaz Rahman Abdullah",
+      name: "Ustaz Shakirullah Ajishafe",
       position: "Vice Principal (Student Affairs)",
       // background: "Student development expert focusing on character building and welfare",
        email: "vpstudent@nuunwalqalam.edu",
-       phone: "+60-12-345-6792",
+      //  phone: "+60-12-345-6792",
       // image: ""
     },
     {
-      name: "Ms. Siti Nurhaliza",
-      position: "Registrar",
+      name: "Ustaz Shakirullah Ajishafe",
+      position: "Teacher",
       // background: "Administrative professional with expertise in student records and admissions",
       email: "registrar@nuunwalqalam.edu",
-      phone: "+60-12-345-6793",
+      // phone: "+60-12-345-6793",
       // image: ""
     },
     {
-      name: "En. Zakaria Hassan",
-      position: "Finance Director",
+      name: "Ustaz Shakirullah Ajishafe",
+      position: "Teacher",
       // background: "Financial management specialist ensuring sustainable operations",
       email: "finance@nuunwalqalam.edu",
-     phone: "+60-12-345-6794",
+    //  phone: "+60-12-345-6794",
       // image: ""
     }
   ];

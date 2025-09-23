@@ -4,10 +4,10 @@ import { BookOpen, Users, Award, Globe } from "lucide-react";
 
 export function ProfileSection() {
   const stats = [
-    { icon: BookOpen, label: "Years of Excellence", value: "39+" },
-    { icon: Users, label: "Students", value: "500+" },
-    { icon: Award, label: "Graduates", value: "2000+" },
-    { icon: Globe, label: "Countries Represented", value: "15+" },
+    { icon: BookOpen, label: "Years of Excellence", value: "30+" },
+    { icon: Users, label: "Students", value: "100+" },
+    { icon: Award, label: "Graduates", value: "1000+" },
+    { icon: Globe, label: "Countries Represented", value: "5+" },
   ];
 
   return (
