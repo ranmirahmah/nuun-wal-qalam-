@@ -2,11 +2,12 @@
 
 import * as React from "react";
 import * as RechartsPrimitive from "recharts";
-import type { TooltipProps, TooltipPayload, LegendProps, LegendPayload } from "recharts";
 
 import { cn } from "./utils";
 
-// Format: { THEME_NAME: CSS_SELECTOR }
+// --------------------
+// Theme Config
+// --------------------
 const THEMES = { light: "", dark: ".dark" } as const;
 
 export type ChartConfig = {
@@ -19,6 +20,9 @@ export type ChartConfig = {
   );
 };
 
+// --------------------
+// Chart Context
+// --------------------
 type ChartContextProps = {
   config: ChartConfig;
 };
@@ -33,7 +37,9 @@ function useChart() {
   return context;
 }
 
-// ---------------- Chart Container ----------------
+// --------------------
+// Chart Container
+// --------------------
 function ChartContainer({
   id,
   className,
@@ -69,7 +75,9 @@ function ChartContainer({
   );
 }
 
-// ---------------- Chart Style ----------------
+// --------------------
+// Chart Styles
+// --------------------
 const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
   const colorConfig = React.useMemo(
     () => Object.entries(config).filter(([, cfg]) => cfg.theme || cfg.color),
@@ -97,23 +105,33 @@ const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
   return <style dangerouslySetInnerHTML={{ __html: css }} />;
 };
 
-// ---------------- Chart Tooltip ----------------
+// --------------------
+// Chart Tooltip
+// --------------------
 const ChartTooltip = RechartsPrimitive.Tooltip;
 
+// Import correct types
+import type { TooltipContentProps } from "recharts";
+import type { LegendProps } from "recharts";
+import type { LegendPayload } from "recharts/types/component/DefaultLegendContent";
+import type { ValueType, NameType } from "recharts/types/component/DefaultTooltipContent";
+
+// Custom Tooltip Props
 interface CustomTooltipProps
-  extends Omit<TooltipProps<number, string>, "payload"> {
-  payload?: TooltipPayload<number, string>[];
-  label?: string | number;
+  extends Omit<TooltipContentProps<ValueType, NameType>, "payload" | "label"> {
   className?: string;
   hideLabel?: boolean;
   hideIndicator?: boolean;
   indicator?: "line" | "dot" | "dashed";
-  labelFormatter?: (value: any, payload?: TooltipPayload<number, string>[]) => React.ReactNode;
+  labelFormatter?: (
+    value: any,
+    payload?: readonly any[]
+  ) => React.ReactNode;
   labelClassName?: string;
   formatter?: (
     value: any,
     name: string,
-    entry: TooltipPayload<number, string>,
+    entry: any,
     index: number,
     payload?: any
   ) => React.ReactNode;
@@ -122,6 +140,7 @@ interface CustomTooltipProps
   labelKey?: string;
 }
 
+// Custom Tooltip Component
 function ChartTooltipContent({
   active,
   payload = [],
@@ -184,7 +203,7 @@ function ChartTooltipContent({
 
           return (
             <div
-              key={item.dataKey || index}
+              key={item.dataKey ?? index}
               className={cn(
                 "[&>svg]:text-muted-foreground flex w-full flex-wrap items-stretch gap-2 [&>svg]:h-2.5 [&>svg]:w-2.5",
                 indicator === "dot" && "items-center"
@@ -206,7 +225,6 @@ function ChartTooltipContent({
                             "w-1": indicator === "line",
                             "w-0 border-[1.5px] border-dashed bg-transparent":
                               indicator === "dashed",
-                            "my-0.5": nestLabel && indicator === "dashed",
                           }
                         )}
                         style={
@@ -218,18 +236,10 @@ function ChartTooltipContent({
                       />
                     )
                   )}
-                  <div
-                    className={cn(
-                      "flex flex-1 justify-between leading-none",
-                      nestLabel ? "items-end" : "items-center"
-                    )}
-                  >
-                    <div className="grid gap-1.5">
-                      {nestLabel ? tooltipLabel : null}
-                      <span className="text-muted-foreground">
-                        {itemConfig?.label || item.name}
-                      </span>
-                    </div>
+                  <div className="flex flex-1 justify-between leading-none">
+                    <span className="text-muted-foreground">
+                      {itemConfig?.label || item.name}
+                    </span>
                     {item.value != null && (
                       <span className="text-foreground font-mono font-medium tabular-nums">
                         {item.value.toLocaleString()}
@@ -246,7 +256,9 @@ function ChartTooltipContent({
   );
 }
 
-// ---------------- Chart Legend ----------------
+// --------------------
+// Custom Legend Component
+// --------------------
 interface CustomLegendProps extends LegendProps {
   payload?: LegendPayload[];
   className?: string;
@@ -277,19 +289,15 @@ function ChartLegendContent({
 
         return (
           <div
-            key={item.value || index}
-            className={cn(
-              "[&>svg]:text-muted-foreground flex items-center gap-1.5 [&>svg]:h-3 [&>svg]:w-3"
-            )}
+            key={item.value ?? index}
+            className="flex items-center gap-1.5"
           >
             {itemConfig?.icon && !hideIcon ? (
               <itemConfig.icon />
             ) : (
               <div
                 className="h-2 w-2 shrink-0 rounded-[2px]"
-                style={{
-                  backgroundColor: item.color,
-                }}
+                style={{ backgroundColor: item.color }}
               />
             )}
             {itemConfig?.label}
@@ -300,7 +308,9 @@ function ChartLegendContent({
   );
 }
 
-// ---------------- Helper ----------------
+// --------------------
+// Helper
+// --------------------
 function getPayloadConfigFromPayload(
   config: ChartConfig,
   payload: unknown,
@@ -332,12 +342,13 @@ function getPayloadConfigFromPayload(
     : config[key as keyof typeof config];
 }
 
-// ---------------- Exports ----------------
+// --------------------
+// Exports
+// --------------------
 export {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-  ChartLegend,
   ChartLegendContent,
   ChartStyle,
 };
