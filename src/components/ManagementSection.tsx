@@ -11,7 +11,7 @@ export function ManagementSection() {
       position: "Teacher",
       // background: "Former Education Minister with 30+ years in educational leadership",
        email: "chairman@nuunwalqalam.edu",
-      //  phone: "+60-12-345-6789",
+       phone: "+60-12-345-6789",
       // image: ""
     },
     {
